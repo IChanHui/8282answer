@@ -6,3 +6,4 @@ consol.log ("pull test")
 
 consol.log ("push test 0621 chan")
 consol.log ("push test 0621 chan2")
+consol.log ("push test 0621 chan3")
