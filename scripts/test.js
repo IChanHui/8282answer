@@ -1,1 +1,1 @@
-console.log("test 0625")
+console.log("test javascript")
