@@ -6,4 +6,4 @@
 
 // 6월 25일 git 연동 완료
 
-
+db, lib, scripts, styles 와 같은 디렉토리 안에 test파일은 무시해도 되고 삭제해도 무관
