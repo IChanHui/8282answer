@@ -5,9 +5,7 @@
     margin: 0px;
     padding: 0px;
     color: black;
-
 }
-
 .intro_bg{
     background-image:url("image/");
     width: 100%;
@@ -21,5 +19,5 @@
 }
 
 .nav{
-    
+    width: 1200px;
 }

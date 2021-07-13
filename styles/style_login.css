@@ -26,11 +26,11 @@ section{
 }
 section input[placeholder] {
     font-size: .8rem;
-    padding: 8px;
+    padding: 5px;
     width: 100%;
-    border: 5px solid #ddd;
+    border: 100px solid #ddd;
     outline: none;
-    transition: box-shadow .5s;
+    transition: box-shadow .1s;
 }
 section input[type="submit"]{
     display: block;
