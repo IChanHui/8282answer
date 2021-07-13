@@ -5,8 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+    #header {
+        background-color: lightblue;
+        height: 100px;
+    }
+    #nav {
+        background-color: lightcoral;
+        color: white;
+        width:200px;
+        height: 300px;
+        float: right;
+    }
+    #section {
+        width: 300px;
+        text-align: center;
+        float: left;
+        padding: 10px;
+    }
+    #footer {
+        background-color: yellow;
+        height: 100px;
+        clear: both;
+    }
+    #header, #nav, #section, #footer {text-align: center;}
+    #header, #footer {line-height: 100px;}
+    #nav, #section {line-height: 240px;}
+    .font_big {font-size: 30px;}
+    .font_center {text-align: left;}
+</style>
 </head>
 <body>
-    <!-- 홈화면 -->
+    <p class="font_big font_center">응답하라, 8282</p>
+    <div id="header">
+       <h2>응답하라, 8282</h2>
+    </div>
+    <div class="nav">
+        <a>가족</a>
+        <a>우정</a>
+        <a>사랑</a>
+        <a>기타</a>
+        <a>가족</a>
+    <div id="nav">
+        <h2>가족</h2>
+    </div>
+    <div id="section">
+        <p>게시글</p>
+    </div>
+    <div id="footer">
+        <h2>footer</h2>
+    </div>
 </body>
 </html>
