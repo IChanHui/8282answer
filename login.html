@@ -4,20 +4,18 @@
     <link rel="stylesheet" href="styles/style_login.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h4>응답하라,8282</h4>
-        </header>
-        <section>
+        <section class="login-form">
+            <h1>응답하라,8282</h1>
             <form action="#">
-                <input type="id" placeholder="아이디를 입력하세요.">
-                <input type="password" placeholder="비밀번호를 입력하세요.">
-                <input type="submit" value="로그인">
+                <div class="int-area">
+                 <label for="text">아이디</label><input type="id" name="id" placeholder="아이디를 입력하세요.">
+                 <label for="text">비밀번호</label><input type="password" name="pw" placeholder="비밀번호를 입력하세요.">
+                </div>
+                <div class="btn-area">
+                    <button type="submit"><a href="index.html">로그인</a></button>
+                </div>
             </form>
-        </section>
-        <footer>
-            @footer
-        </footer>   
+        </section>  
     </div>
 </body>
 </html>

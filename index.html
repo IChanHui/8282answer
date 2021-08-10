@@ -12,7 +12,8 @@
     }
 		 
     #header {
-        margin: 80px 0px 30px 400px ;
+        margin: 40px 0px 40px 120px ;
+		font-size: 55px;
     }
 	
     #ranking { 
@@ -26,19 +27,20 @@
     }
 	
 	#main {
+		display: flex;
+		margin: auto;
 		background-color: green;
 	}
 	
     #banner {
         width: 300px;
-        
         float: right;
     }
 	
 	.home {
-			background-color: hotpink;
-			text-align: center;
-			height: 200px;
+		background-color: hotpink;
+		text-align: center;
+		height: 200px;
 	}
 
     .category {
@@ -46,8 +48,18 @@
 			background-color: yellow;
 			height: 450px;
 	}
+	.category > li{
+		margin-left: 30px;
+		height: 45px;
+		list-style-type: none;
+		font-size: 20px;
+	}
+	.category > li > a{
+		text-decoration: none;
+	}
 	
     #footer {
+		color: black;
         background-color: lightyellow;
         height: 100px;
         clear: both;
@@ -61,7 +73,7 @@
 </style>
 </head>
 <body>
-    <div id="header"><h1>8282 응,답하라</h1></div>
+    <div id="header">8282 응,답하라</div>
 	
 	<div id="ranking">번호. 닉네임 점수 (아이콘)</div>
 	
@@ -69,17 +81,17 @@
 	
 	<div id="banner">
 		<div class="home">
-			<button class="log">로그인</button>
-			<button class="sign">회원가입</button>
+			<button type="button"><a href="login.html">로그인</a></button>
+			<button type="submit">회원가입</button>
 		</div>
 		<div class="category">
-			<li>가족</li>
-			<li>사랑</li>
-			<li>우정</li>
-			<li>고민</li>
-			<li>기타</li>
-			<li>작성한 게시글</li>
-			<li>답변한 게시글</li>
+			<li><a href="#">가족</a></li>
+			<li><a href="#">사랑</a></li>
+			<li><a href="#">우정</a></li>
+			<li><a href="#">고민</a></li>
+			<li><a href="#">기타</a></li>
+			<li><a href="#">작성한 게시글</a></li>
+			<li><a href="#">답변한 게시글</a></li>
 		</div>
 	</div>
 	

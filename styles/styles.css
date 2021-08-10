@@ -13,11 +13,17 @@
 }
 
 .header{
+    background-color: lightblue;
+    height: 100px;
     width:1200px;
     margin: auto;
 
 }
 
 .nav{
-    width: 1200px;
+    background-color: lightcoral;
+    color: white;
+    width:200px;
+    height: 300px;
+    float: right;
 }
