@@ -1,4 +1,4 @@
-*{
+*
 body { 
     background-color: black; 
     color:white;
@@ -61,6 +61,6 @@ body {
 
 
 
-<!--#header, #footer {line-height: 100px;}
-#banner, #ranking {line-height: 240px;}-->
-}
+#header, #footer {line-height: 100px;}
+#banner, #ranking {line-height: 240px;}
+
