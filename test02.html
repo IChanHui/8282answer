@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <style>
+        .container{
+            display: grid;
+            margin: auto;
+            height:1000px;
+            grid-template-columns: 250px 900px 250px;
+            grid-template-rows: 120px 200px 300px 10px;
+            grid-template-areas: 'header header header'
+                                 'ranking main top'
+                                 'ranking main menu'
+                                 'ranking main menu'
+                                 'ranking main menu'
+                                 'footer footer footer'
+        }
+        .header{
+            grid-area: header;
+            margin: 20px 10px 10px 90px ;
+            font-size: 55px;
+            font-weight: 600;
+            background-color: white;
+        }
+        .ranking{
+            grid-area: ranking;
+            background-color: cornflowerblue;
+        }
+        .main{
+            grid-area: main;
+            background-color: green;
+        }
+        .top{
+            grid-area: top;
+            background-color: hotpink;
+            padding-top: 90px;
+            text-align: center;
+        }
+        .top > button{
+            background:thistle;
+            font-size:25px;
+            padding: 10px 10px;
+            border: none;
+        }
+        .top > button > a{
+            text-decoration: none;
+
+        }
+        .menu{
+            grid-area: menu;
+            background-color: yellow;
+            font-size: 30px;
+        }
+        .menu > li{
+            margin-left: 30px;
+            height: 40px;
+            padding-top: 40px;
+            list-style-type: none;
+        }
+        .menu > li > a{
+            text-decoration: none;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: lightyellow;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="header">8282,응답하라</div>
+            <div class="ranking">닉네임</div>
+            <div class="main">질문게시판</div>
+            <div class="top">
+                <button type="button"><a href="login.html">로그인</a></button>
+			    <button type="submit"><a href="sign.html">회원가입</a></button>
+            </div>
+            <div class="menu">
+                <li><a href="#">가족</a></li>
+			    <li><a href="#">사랑</a></li>
+			    <li><a href="#">우정</a></li>
+			    <li><a href="#">고민</a></li>
+			    <li><a href="#">기타</a></li>
+            </div>
+            <div class="footer">푸터</div>
+        </div>
+    </body>
+</html>
