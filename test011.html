@@ -8,22 +8,39 @@
 </head>
 <style>
     body{
-         background-color: black;
+        background-image:url('IMG_9691.png')  
     }
 
     thead{
         color: white;
         height: 150px;
         font-size:50px;
-        
     }
 
     #ranking{
         width: 300px;
         height: 650px;
         color: cornflowerblue;
+        background-color: black;
         border: 2px solid white;
         font-size: 18px;
+        overflow-x:hidden;
+        overflow-y: scroll;
+    }
+
+    #ranking::-webkit-scrollbar{
+        width: 10px;
+    }
+
+    #ranking::-webkit-scrollbar-thumb{
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    #ranking::-webkit-scrollbar-track{
+        background: transparent;
+        border-radius: 10px;
+        
     }
 
     #main{
@@ -38,20 +55,34 @@
         background-color: hotpink;
         text-align: center;
     }
-    button { font-size: 25px; }
+    button { 
+        font-size: 20px; 
+        padding: 10px 30px;
+        list-style-type: none;
+        border: none;
+        background: rgb(172, 152, 226);
+    }
 
     #category{
         width: 250px;
         height: 300px; 
         background-color:  yellow;
-        list-style-type: none;
         text-decoration: none;
+        list-style-type: none;
+        
+    }
+
+    #category> li{
+        margin-left: 30px;
+        padding-top: 20px;
+        height: 30px;
     }
 
     tfoot{
         width: 900px;
         height: 80px;
         background-color: rebeccapurple;
+        text-align: center;
     }
 
     div{ width: auto; height: 40px; background-color:black;}
@@ -69,7 +100,10 @@
         <tbody>
             <tr>
                  <td id="ranking" rowspan="3" align="center">
-                      1. 웹플팀 9000점 (아이콘)
+                      1. 웹플팀 9000점 (아이콘)<br>
+                      1. 웹플팀 9000점 (아이콘)<br>
+                      1. 웹플팀 9000점 (아이콘)<br>
+                      1. 웹플팀 9000점 (아이콘)<br>
                   </td>
                   <td id="main" rowspan="2">
                       질문게시판
@@ -81,11 +115,11 @@
             </tr>
             <tr>
                 <td id="category">
-                    <li>가족</li>
-                    <li>사랑</li>
-                    <li>우정</li>
-                    <li>고민</li>
-                    <li>기타</li>
+                    <li><a href="#">가족</a></li>
+                    <li><a href="#">사랑</a></li>
+                    <li><a href="#">우정</a></li>
+                    <li><a href="#">고민</a></li>
+                    <li><a href="#">기타</a></li>
                 </td>
             </tr>
         </tbody>
