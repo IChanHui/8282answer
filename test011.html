@@ -13,7 +13,7 @@
 
     thead{
         color: white;
-        height: 150px;
+        height: 130px;
         font-size:50px;
         
     }
@@ -28,8 +28,20 @@
 
     #main{
         width: 1100px;
-        height: 650px;
+        height: 700px;
+        background-color: darkgray;
+        
+    }
+    #main > div{ 
+        width: 1050px;
+        height: 70px;
+        position: relative;
         background-color: green;
+        margin-top: 10px;
+     }
+     #main > button{ 
+         float: right; 
+        margin-right: 30px;
     }
 
     #home{
@@ -38,42 +50,50 @@
         background-color: hotpink;
         text-align: center;
     }
-    button { font-size: 25px; }
+    #home > button { font-size: 25px; }
 
     #category{
         width: 250px;
         height: 300px; 
-        background-color:  yellow;
+        background-color:  orange;
         list-style-type: none;
         text-decoration: none;
     }
 
     tfoot{
         width: 900px;
-        height: 80px;
+        height: 50px;
         background-color: rebeccapurple;
     }
 
-    div{ width: auto; height: 40px; background-color:black;}
+    #fd{ width: auto; height: 30px; background-color:black;}
 </style>
 <body>
-    <div></div>
+    <div id="fd"></div>
     <table align="center">
         <thead>
             <tr>
-                <th colspan="2">
+                <th></th>
+                <th colspan="2" align="left">
                     8282,응답하라
                 </th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                 <td id="ranking" rowspan="3" align="center">
+                 <td id="ranking" rowspan="2" align="center">
                       1. 웹플팀 9000점 (아이콘)
                   </td>
-                  <td id="main" rowspan="2">
-                      질문게시판
-                   </td>
+                  <td id="main" rowspan="2" align="center">
+                    <button type="button">글쓰기</button><br>
+                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
+                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
+                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
+                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
+                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
+                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
+                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
+                  </td>
                   <td id="home">
                     <button type="button"><a href="login.html">로그인</a></button><br><br>
                     <button type="submit"><a href="sign.html">회원가입</a></button>
