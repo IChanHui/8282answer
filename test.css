@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.login-form{ 
+    background-color: blue;
+    padding: 20px 0;
+}
+.login-form h1{
+    font-size: 50px; 
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-form, .box{
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    margin-top: 350px;
+}
+.box{
+    background-color: black;
+    margin-top: 380px;
+    margin-left: 50px;
+}
+
+.int-area {
+    margin-top: 70px;
+    padding-bottom: 5%;
+}
+.int-area label{
+    width: 100%;
+}
+.int-area input{
+    border: 2px solid gray;
+    font-size: 15px; 
+    margin-bottom: 20px;
+}
+
+.btn-area button{
+    width: 20%; height: 35px;
+    background: rgb(32, 99, 243);
+    font-size: 20px;
+    /*border: none;*/
+    border-radius: 25px;
+    margin-top: 20px;
+}
