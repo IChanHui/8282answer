@@ -22,7 +22,6 @@
         width: 300px;
         height: 650px;
         color: cornflowerblue;
-        background-color: black;
         border: 2px solid white;
         font-size: 18px;
         overflow: hidden;
@@ -43,19 +42,25 @@
     #main{
         width: 1100px;
         height: 700px;
-        background-color: darkgray;
+        background-color: black;
         
     }
     #main > div{ 
-        width: 1050px;
-        height: 70px;
+        width: 1000px;
+        height: 80px;
         position: relative;
-        background-color: green;
-        margin-top: 10px;
+        background-color: chartreuse;
      }
-     #main > button{ 
-         float: right; 
-        margin-right: 30px;
+     #main > div > h2{
+        text-align: left;
+        padding-left: 20px;
+    }
+     #ref{ 
+        float: right; 
+        margin-right: 50px;
+    }
+    #bdown{
+        background-color: darkgreen;
     }
 
     #home{
@@ -85,7 +90,7 @@
         text-align: center;
     }
 
-    #fd{ width: auto; height: 30px; background-color:black;}
+    #fd{ width: auto; height: 30px; }
 </style>
 <body>
     <div id="fd"></div>
@@ -100,18 +105,18 @@
         </thead>
         <tbody>
             <tr>
-                 <td id="ranking" rowspan="2" align="center">
+                 <td id="ranking" rowspan="2" align="center"><b>
                       1. 웹플팀 9000점 (아이콘)
-                  </td>
+                 </b></td>
                   <td id="main" rowspan="2" align="center">
-                    <button type="button">글쓰기</button><br>
+                    <button type="button" id="ref">글쓰기</button><br>
+                    <div><h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
                     <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
                     <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
                     <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
                     <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
                     <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
-                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
-                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
+                    <br><button type="button" id="bdown">아래로</button>
                   </td>
                   <td id="home">
                     <button type="button" onclick="location.href='login.html'">로그인</button><br><br>
