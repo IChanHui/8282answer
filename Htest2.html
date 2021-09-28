@@ -4,50 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Htest2</title>
 </head>
 <style>
     body{
         /*background-image:url('IMG.PNG');*/
         background-color: darkblue;
         color: white;
+        font-family: 'Courier New', Courier, monospace;
     }
+
+    table{  border-spacing: 20px; }    
 
     thead{
         color: white;
-        height: 130px;
-        font-size:50px;
-        
+        height: 80px;
+        font-size: 50px;
     }
 
     #ranking{
         width: 300px;
         height: 650px;
-        color: chartreuse;
-        /*border: 2px solid white;*/
+        color: white;
         font-size: 18px;
         overflow: hidden;
         vertical-align: top;
         padding: 3px;
     }
-    
-    #ranking::-webkit-scrollbar{
-        width: 3px;
+    #ranking > b > div{
+        text-align: center; font-size: 25px; 
+        color: yellow; background-color: green;
+        margin-bottom: 20px;
     }
-
-    #ranking::-webkit-scrollbar-thumb{
-        background-color: black;
-    }
-
-    #ranking::-webkit-scrollbar-track{
-        background-color: gray;
-    }
+    #ranking::-webkit-scrollbar{ width: 3px;    }
+    #ranking::-webkit-scrollbar-thumb{ background-color: black;   }
+    #ranking::-webkit-scrollbar-track{  background-color: gray;  }
 
     #main{
         width: 1050px;
         height: 700px;
-        border: 2px solid white;
-        /*background-color: violet;*/
+        border: 5px solid blue;
+        background-color: rgba(128, 128, 128, 0.527);
     }
     #main > div{ 
         width: 1000px;
@@ -55,7 +52,6 @@
         position: relative;
         background-color: purple;
         border-radius: 20px;
-        /*color: black;*/
      }
      #main > div > h2{
         text-align: left;
@@ -64,10 +60,14 @@
      #ref{ 
         float: right; 
         margin-right: 50px;
+        background-color: rgb(224, 35, 224);
+        border: none; border-radius: 10px;
+        color: white;
     }
-    /*#bdown{
-        background-color: darkgreen;
-    }*/
+    #bdown{ 
+        font-size: 5; 
+        background-color: gray; 
+    }
 
     #home{
         width: 250px;
@@ -77,31 +77,30 @@
     }
     #home > button { 
         font-size: 23px;
-        /*border-radius: 27px; 
-        border: none;*/
         color: white;
         background-color: blue;
         padding: 12px;
     }
 
     #category{
-        width: 250px;
+        width: 200px;
         height: 300px; 
-        /*background-color:  orange;*/
         list-style-type: none;
+        background-color: rgba(255, 255, 255, 0.568);
+        border: 3px solid orangered;
+        border-top: none; border-left: none;
     }
-
     #category > li{
-            margin-left: 30px;
-            height: 40px;
-            padding-top: 20px;
-            color: yellow;
+        margin-left: 30px;
+        height: 40px;
+        padding-top: 5px; 
     }
+    #category > li > a:link { color: orange; text-decoration: none; }
+    #category > li > a:hover { color: blue;}
 
     tfoot{
         width: 900px;
-        height: 50px;
-        /*background-color: rebeccapurple;*/
+        height: 40px;
         text-align: center;
     }
 
@@ -114,24 +113,25 @@
             <tr>
                 <th></th>
                 <th colspan="2" align="left">
-                    8282 응, 답하라
+                    8282 응,답하라
                 </th>
             </tr>
         </thead>
         <tbody>
             <tr>
                  <td id="ranking" rowspan="2" align="left"><b>
+                     <div>★ Ranking ★</div>
                       1. 웹플팀 9000점 (아이콘)
                  </b></td>
                   <td id="main" rowspan="2" align="center">
                     <button type="button" id="ref">글쓰기</button><br>
-                    <div><h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
+                    <div><h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
                     <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
                     <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
                     <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
                     <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
                     <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
-                    <br><button type="button" id="bdown">아래로</button>
+                    <br><button type="button" id="bdown">▼</button>
                   </td>
                   <td id="home">
                     <button type="button" onclick="location.href='login.html'">로그인</button><br><br>
@@ -140,18 +140,20 @@
             </tr>
             <tr>
                 <td id="category">
-                    <li>가족</li>
-                    <li>사랑</li>
-                    <li>우정</li>
-                    <li>고민</li>
-                    <li>기타</li>
+                    <li><a href="#">#가족</a></li>
+                    <li><a href="#">#사랑</a></li>
+                    <li><a href="#">#우정</a></li>
+                    <li><a href="#">#고민</a></li>
+                    <li><a href="#">#기타</a></li><!--<br><br>
+                    <li><a href="#">☞ 작성한 게시글</a></li>
+                    <li><a href="#">☞ 답변한 게시글</a></li>-->
                 </td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <td colspan="3">
-                    웹플팀 &nbsp;&ensp;-&emsp; 팀장 : 이찬희 &nbsp; 팀원 : 소유진, 유지선, 이시연
+                    @웹플팀 &nbsp;&ensp;-&emsp; 팀장 : 이찬희 &nbsp; 팀원 : 소유진, 유지선, 이시연
                 </td>
             </tr>
         </tfoot>
