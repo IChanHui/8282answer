@@ -16,6 +16,8 @@
 
     table{  border-spacing: 20px; }    
 
+    button{ font-family: 'Courier New', Courier, monospace; }
+
     thead{
         color: white;
         height: 80px;
@@ -36,12 +38,10 @@
         color: yellow; background-color: green;
         margin-bottom: 20px;
     }
-    #ranking::-webkit-scrollbar{ width: 3px;    }
+    /*#ranking::-webkit-scrollbar{ width: 3px;    }
     #ranking::-webkit-scrollbar-thumb{ background-color: black;   }
-    #ranking::-webkit-scrollbar-track{  background-color: gray;  }
-    /*#airp{ width: 20px; margin-bottom: auto;}*/
-
-    img{width: 35px;height: 35px;}
+    #ranking::-webkit-scrollbar-track{  background-color: gray;  }*/
+    img{width: 35px; height: 35px;}
 
     #main{
         width: 1050px;
@@ -50,25 +50,24 @@
         background-color: rgba(128, 128, 128, 0.527);
         position: relative;
     }
-    #main > div{ 
-        width: 1000px;
-        height: 80px;
-        position: relative;
-        background-color: purple;
-        border-radius: 20px;
-     }
-     #main > div > h2{
-        text-align: left;
-        padding-left: 20px;
-    }
-     #ref{ 
-        background-color: rgb(224, 35, 224);
-        border: none; border-radius: 10px;
+    #ref{ 
+        background-color: rgb(255, 0, 255);
         color: white;
         position: absolute;
-        top: 30px;
-        right: 25px;
+        top: 25px;
+        right: 40px;
     }
+    #post{ 
+        width: 930px;
+        height: 80px;
+        position: relative;
+        background-color:blueviolet;
+        border-radius: 30px;
+        text-align: left;
+        padding-left: 40px;
+        color: white;
+     }
+     #main > #post > h2{ margin: auto;  }
     #bdown{ 
         font-size: 5; 
         background-color: gray; 
@@ -81,7 +80,7 @@
     #home{
         width: 250px;
         height: 150px;
-        background-color: blue;
+        background-color: darkblue;
         text-align: center;
     }
     #home > button { 
@@ -134,20 +133,34 @@
                       2. 웹플팀입니다 8000점 <img id="airp" src="air.svg"><br>
                       3. 구앱플현웹플이 7000점 <img id="airp" src="air.svg"><br>
                       4. 졸업작품 6000점 <img id="airp" src="air.svg"><br>
+                      1. 웹플팀 9000점 <img id="airp" src="air.svg"><br>
+                      2. 웹플팀입니다 8000점 <img id="airp" src="air.svg"><br>
+                      3. 구앱플현웹플이 7000점 <img id="airp" src="air.svg"><br>
+                      4. 졸업작품 6000점 <img id="airp" src="air.svg"><br>
+                      1. 웹플팀 9000점 <img id="airp" src="air.svg"><br>
+                      2. 웹플팀입니다 8000점 <img id="airp" src="air.svg"><br>
+                      3. 구앱플현웹플이 7000점 <img id="airp" src="air.svg"><br>
+                      4. 졸업작품 6000점 <img id="airp" src="air.svg"><br>
+                      1. 웹플팀 9000점 <img id="airp" src="air.svg"><br>
+                      2. 웹플팀입니다 8000점 <img id="airp" src="air.svg"><br>
+                      3. 구앱플현웹플이 7000점 <img id="airp" src="air.svg"><br>
+                      16. 졸업작품 6000점 <img id="airp" src="air.svg"><br>
                  </b></td>
+
                   <td id="main" rowspan="2" align="center">
-                    <!--<button type="button" id="ref">글쓰기</button><br>-->
-                    <div><h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
-                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
-                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
-                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
-                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
-                    <div><h2>제목</h2>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</div>
+                    <button type="button" id="ref">글쓰기</button><br>
+                    <button type="button" id="post"><h2>제목</h2><br> 내용dhskljfhsdfslvsdv;lㅇ리ㅜ냐ㅣㄷ쥬ㅐ퍄매ㅗㅑㅙㅑㄴㅇㅁ호</button><br><br>
+                    <button type="button" id="post"><h2>제목</h2><br> 내용</button><br><br>
+                    <button type="button" id="post"><h2>제목</h2><br> 내용</button><br><br>
+                    <button type="button" id="post"><h2>제목</h2><br> 내용</button><br><br>
+                    <button type="button" id="post"><h2>제목</h2><br> 내용</button><br><br>
+                    <button type="button" id="post"><h2>제목</h2><br> 내용</button><br>
                     <br><button type="button" id="bdown">▼</button>
                   </td>
+                  
                   <td id="home">
-                    <button type="button" onclick="location.href='login.html'">로그인</button><br><br>
-                    <button type="button" onclick="location.href='sign.html'">회원가입</button>
+                    <button type="button" onclick="location.href='login.html'"><b>&emsp; Login &emsp;</b></button><br><br>
+                    <button type="button" onclick="location.href='sign.html'"><b>Membership</b></button>
                   </td>
             </tr>
             <tr>
