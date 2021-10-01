@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,21 @@
 </head>
 <style>
     body{
-        background-image:url('bgi2.png');
-        background-color: darkblue;
+        padding: 0px;
+        margin: 0px;
         color: white;
         font-family: 'Courier New', Courier, monospace;
     }
+    video {
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        overflow: hidden;
+    }
+    
 
     table{  border-spacing: 20px; }    
 
@@ -82,13 +92,22 @@
         font-size: 23px;
         color: white;   background-color: blue;
         padding: 12px;
+        
+        box-shadow: 3px 3px 3px black;
+        transition-duration: 0.3s;
+        
     }
 
+    #home > button:active{
+        margin-left: 5px;
+        margin-top: 5px;
+        box-shadow: none;
+    }
     #category{
         width: 200px; height: 300px; 
         list-style-type: none;
         background-color: rgba(255, 255, 255, 0.479);
-        border: 3px solid orangered;
+        border: 3px solid #25b6a2;
         border-top: none; border-left: none;
     }
     #category > li{
@@ -108,8 +127,10 @@
     #fd{ width: auto; height: 30px; }
 </style>
 <body>
+    <video autoplay muted loop poster="bgi.png">
+     <source src="background.mp4"></video>
     <div id="fd"></div>
-    <table align="center">
+    <table text-align = "center">  
         <thead>
             <tr>
                 <th></th>
@@ -120,7 +141,7 @@
         </thead>
         <tbody>
             <tr>
-                 <td id="ranking" rowspan="2" align="left"><b>
+                 <td id="ranking" rowspan="2" text-align="left"><b>
                      <div>★ Ranking ★</div>
                       1. 웹플팀 9000점 <img id="airp" src="air.svg"><br>
                       2. 웹플팀입니다 8000점 <img id="airp" src="air.svg"><br>
