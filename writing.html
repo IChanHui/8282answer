@@ -4,18 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Htest2</title>
+    <title>게시글 작성중</title>
 </head>
 <style>
     body{
         padding: 0px;  margin: 0px;
         color: white;
         font-family: 'Courier New', Courier, monospace;
-        overflow:hidden;
-        height: 100vh;
+        overflow: hidden;        
     }
-
-    /*@media screen and (max-height: 100%){    }*/ 
 
    video {
         position: absolute;
@@ -50,40 +47,41 @@
 
     #main{
         width: 1000px;   height: 700px;
-        border: 5px solid blue;
+        border: 5px solid rgba(128, 128, 128, 0.527);
         background-color: rgba(128, 128, 128, 0.527);
         position: relative;
     }
-    #ref{ 
+    #go_back{ 
         background-color: rgb(255, 0, 255);  color: pink;
         position: absolute;
         top: 25px;   right: 65px; 
         font-size: medium;
     }
-    #post{ 
-        width: 880px;  height: 90px;
-        position: relative;  text-align: left;
-        background-color: rgb(217, 244, 255); 
-        border-radius: 30px; border: 5px ridge skyblue;
-        padding-left: 40px;  padding-right: 40px;
-     }
-     #post:active{ 
-        border-right: 5px ridge rgb(84, 125, 141);  
-        border-bottom: 5px ridge rgb(58, 86, 97); 
+    #post-form{ 
+        width: 85%; height: 85%; 
+        background-color: rgb(255, 183, 49); 
+        margin-top: 2%;
+        border-radius: 30px; border: ridge orange;
     }
-    #post > #sp1 { 
-        font-size: 2em; 
-        margin-bottom: -5px; 
-        color: black;
-        font-weight: bold;
+    #post-form > label{ font-size: xx-large; color: rgb(43, 46, 73); font-weight: 900; }
+    #title{
+        font-size: x-large; 
+        margin: 6% 0 2% 0;
+        width: 55%;
+        border: solid rgb(43, 46, 73);
+        border-top: none; border-left: none; border-right: none;
     }
-    #post > #sp2{ font-size: 1.2em; color: gray; }
-    #bdown{ 
-        font-size: 5; 
-        background-color: gray; 
-        padding-left: 10px;  padding-right: 10px;
-        position:absolute;
-        bottom: 30px;
+    #post-form > span{ color: blue; font-weight: bold; }
+    textarea{
+        margin: 1% 0 2% 0;
+        width: 70%; 
+        font-size: x-large; 
+        border: 3px solid rgb(43, 46, 73);
+        resize: none;
+    }
+    #completion{
+        color: white;   background-color: blue;
+        font-size:medium;
     }
 
     #home{
@@ -91,7 +89,7 @@
         background-color: darkblue;
         text-align: center;
     }
-    #home > button { 
+    /*#home > button { 
         font-size: 23px;
         color: white;   background-color: blue;
         padding: 12px;
@@ -101,7 +99,7 @@
     #home > button:active{
         margin-left: 5px;   margin-top: 5px;
         box-shadow: none;
-    }
+    }*/
 
     #category{
         width: 200px; height: 300px;
@@ -117,7 +115,7 @@
         padding-top: 5px; 
         font-size:large;
     }
-    #category > li > a:link, a:visited { color: gold; text-decoration: none; }
+    #category >li >a:link, a:visited { color: gold; text-decoration: none; }
     #category > li > a:hover { color: blue;}
 
     tfoot{
@@ -168,33 +166,26 @@
                  </b></td>
 
                   <td id="main" rowspan="2" align="center">
-                    <button type="button" id="ref"><b>질문하러 GO</b></button>
-                        <button type="button" id="post">
-                            <div id="sp1">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</div><br>
-                            <span id="sp2">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</span>
-                        </button><br><br>
-                        <button type="button" id="post">
-                            <div id="sp1">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</div><br>
-                            <span id="sp2">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</span>
-                        </button><br><br>
-                        <button type="button" id="post">
-                            <div id="sp1">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</div><br>
-                            <span id="sp2">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</span>
-                        </button><br><br>
-                        <button type="button" id="post">
-                            <div id="sp1">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</div><br>
-                            <span id="sp2">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</span>
-                        </button><br><br>
-                        <button type="button" id="post">
-                            <div id="sp1">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</div><br>
-                            <span id="sp2">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</span>
-                        </button>
-                    <br><button type="button" id="bdown">▼</button>
+                    <button type="button" id="go_back"><b> GO BACK</b></button><br>
+                    <form id="post-form" method="POST">
+                        <label for="title">제목: </label>
+                        <input id="title" type="text" name="title" maxlength="21" placeholder="20자 이내로 입력하세요.">
+                        <br><br>
+                        <b>주제를 선택하세요 ▶</b>&emsp;&emsp;
+                        <span>
+                            <input id="family" type="radio" name="category" value="f">가족&emsp;
+                            <input id="love" type="radio" name="category" value="l">사랑&emsp;
+                            <input id="friend" type="radio" name="category" value="fs">우정&emsp;
+                            <input id="worry" type="radio" name="category" value="w">고민&emsp;
+                            <input id="other" type="radio" name="category" value="o">기타&emsp;
+                        </span><br/>
+                        <textarea name="contents" rows="15" maxlength="250"></textarea><br/>
+                        <input id="completion" type="submit" name="completion" value="작성완료">
+                    </form>
                   </td>
                   
                   <td id="home">
-                    <button type="button" onclick="location.href='login.html'"><b>&emsp; Login &emsp;</b></button><br><br>
-                    <button type="button" onclick="location.href='sign.html'"><b>Membership</b></button>
+
                   </td>
             </tr>
             <tr>
@@ -203,9 +194,9 @@
                     <li><a href="#">#사랑</a></li>
                     <li><a href="#">#우정</a></li>
                     <li><a href="#">#고민</a></li>
-                    <li><a href="#">#기타</a></li><!--<br><br>
+                    <li><a href="#">#기타</a></li><br><br>
                     <li><a href="#">☞ 작성한 게시글</a></li>
-                    <li><a href="#">☞ 답변한 게시글</a></li>-->
+                    <li><a href="#">☞ 답변한 게시글</a></li>
                 </td>
             </tr>
         </tbody>

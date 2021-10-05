@@ -1,1 +1,1 @@
-console.log("test docker")
+/*console.log("test docker")*/
