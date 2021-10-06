@@ -8,11 +8,12 @@
 </head>
 <style>
     body{
+        background-color: #030D98;
         padding: 0px;  margin: 0px;
         color: white;
         font-family: 'Courier New', Courier, monospace;
-        overflow:hidden;
-        height: 100vh;
+        /*overflow:hidden;*/
+        /*height: 100vh;*/
     }
 
     /*@media screen and (max-height: 100%){    }*/ 
@@ -21,19 +22,18 @@
         position: absolute;
         z-index: -100;
         width: 100%;
-    }
+        }
     
-    table{  border-spacing: 20px; }    
+    table{  border-spacing: 20px; }  
 
     button{ font-family: 'Courier New', Courier, monospace;  cursor: pointer; }
 
-    thead{  height: 80px; }
-    thead > tr > th > img{ width: 500px; height: 80px; margin-left: 280px;}
+    /*thead{  height: 80px; }*/
+    thead > tr > th > img{ width: 430px; height: 60px; margin-left: 280px;}
 
     #ranking{
-        width: 300px;  height: 650px;
         color: white;
-        font-size: 1.1em;
+        font-size: 1em;
         overflow: hidden;
         vertical-align: top;
         padding: 3px;
@@ -49,7 +49,7 @@
     #ranking::-webkit-scrollbar-track{  background-color: gray;  }*/
 
     #main{
-        width: 1000px;   height: 700px;
+        width: 800px; height: 100px;
         border: 5px solid blue;
         background-color: rgba(128, 128, 128, 0.527);
         position: relative;
@@ -61,7 +61,7 @@
         font-size: medium;
     }
     #post{ 
-        width: 880px;  height: 90px;
+        width: 780px;  height: 70px;
         position: relative;  text-align: left;
         background-color: rgb(217, 244, 255); 
         border-radius: 30px; border: 5px ridge skyblue;
@@ -78,6 +78,7 @@
         font-weight: bold;
     }
     #post > #sp2{ font-size: 1.2em; color: gray; }
+
     #bdown{ 
         font-size: 5; 
         background-color: gray; 
@@ -87,7 +88,7 @@
     }
 
     #home{
-        width: 250px;   height: 150px;
+        width: 200px;
         background-color: darkblue;
         text-align: center;
     }
@@ -104,12 +105,11 @@
     }
 
     #category{
-        width: 200px; height: 300px;
+        width: 40px;
         list-style-type: none;
         background-color: rgba(255, 255, 255, 0.452);
         /*border: 3px solid #25b6a2;*/
-        border: 3px solid silver;
-        border-top: none; border-left: none;
+        border:none;
     }
     #category > li{
         margin-left: 30px;
@@ -121,7 +121,7 @@
     #category > li > a:hover { color: blue;}
 
     tfoot{
-        width: 900px;   height: 40px;
+       
         text-align: center;
     }
 
@@ -131,7 +131,7 @@
 
 
 <body>
-    <video autoplay muted loop poster="background.mp4">
+    <video autoplay muted loop poster="background.mp4" background-size=cover no-respect>
         <source src="background.mp4" type="video/mp4">
     </video>
     <div id="fd"></div>
