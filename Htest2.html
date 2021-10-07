@@ -10,46 +10,43 @@
     body{
         background-color: #030D98;
         padding: 0px;  margin: 0px;
-        color: white;
         font-family: 'Courier New', Courier, monospace;
-        /*overflow:hidden;*/
-        /*height: 100vh;*/
     }
 
-    /*@media screen and (max-height: 100%){    }*/ 
-
-   video {
-        position: absolute;
+   video{
+        position: absolute; top: 0%;
         z-index: -100;
-        width: 100%;
-        }
+        width: 100%; height: 100vh;
+        object-fit: cover;
+    }
     
-    table{  border-spacing: 20px; }  
+    table{  
+        border-spacing: 20px;  margin-top: 2.5%;  /*table-layout: fixed; */
+        white-space: nowrap;   /*text-overflow: ellipsis;*/
+    }  
 
     button{ font-family: 'Courier New', Courier, monospace;  cursor: pointer; }
 
-    /*thead{  height: 80px; }*/
-    thead > tr > th > img{ width: 430px; height: 60px; margin-left: 280px;}
+    thead > tr > th > img{ width: 430px; height: 70px; margin-left: 250px; }
 
     #ranking{
         color: white;
         font-size: 1em;
-        overflow: hidden;
         vertical-align: top;
-        padding: 3px;
     }
     #ranking > b > #rkh{
         text-align: center; font-size: 1.5em; 
         color: yellow; background-color: green;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
-    #ranking > b> div > img{width: 35px; height: 35px;}
+    #ranking > b > div{ margin-bottom: 3px; }
+    #ranking > b> div > img{width: 30px; height: 30px;  }
     /*#ranking::-webkit-scrollbar{ width: 3px;  }
     #ranking::-webkit-scrollbar-thumb{ background-color: black;   }
     #ranking::-webkit-scrollbar-track{  background-color: gray;  }*/
 
     #main{
-        width: 800px; height: 100px;
+        width: 800px;  
         border: 5px solid blue;
         background-color: rgba(128, 128, 128, 0.527);
         position: relative;
@@ -61,11 +58,11 @@
         font-size: medium;
     }
     #post{ 
-        width: 780px;  height: 70px;
-        position: relative;  text-align: left;
+        width: 750px;  height: 70px;
+        position: relative;  text-align: left; 
         background-color: rgb(217, 244, 255); 
         border-radius: 30px; border: 5px ridge skyblue;
-        padding-left: 40px;  padding-right: 40px;
+        padding: 0 5% 0 5%;
      }
      #post:active{ 
         border-right: 5px ridge rgb(84, 125, 141);  
@@ -73,12 +70,12 @@
     }
     #post > #sp1 { 
         font-size: 2em; 
-        margin-bottom: -5px; 
+        margin-bottom: -13px; 
         color: black;
         font-weight: bold;
+        overflow: hidden;
     }
-    #post > #sp2{ font-size: 1.2em; color: gray; }
-
+    #post > #sp2{ font-size: 1.2em; color: gray; text-overflow: hidden;  }
     #bdown{ 
         font-size: 5; 
         background-color: gray; 
@@ -88,12 +85,12 @@
     }
 
     #home{
-        width: 200px;
+        width: 240px;
         background-color: darkblue;
         text-align: center;
     }
     #home > button { 
-        font-size: 23px;
+        font-size: 20px;
         color: white;   background-color: blue;
         padding: 12px;
         box-shadow: 3px 3px 3px black;
@@ -105,7 +102,6 @@
     }
 
     #category{
-        width: 40px;
         list-style-type: none;
         background-color: rgba(255, 255, 255, 0.452);
         /*border: 3px solid #25b6a2;*/
@@ -120,21 +116,17 @@
     #category > li > a:link, a:visited { color: gold; text-decoration: none; }
     #category > li > a:hover { color: blue;}
 
-    tfoot{
-       
-        text-align: center;
+    footer{
+        color: white;   
+        width: 100%;  height: 80px; position: absolute;
+        bottom: 0;  text-align: center;
     }
-
-    #fd{ width: auto; height: 30px;}
 </style>
-
-
 
 <body>
     <video autoplay muted loop poster="background.mp4" background-size=cover no-respect>
         <source src="background.mp4" type="video/mp4">
     </video>
-    <div id="fd"></div>
 
     <table align = "center">  
         <thead>
@@ -170,24 +162,28 @@
                   <td id="main" rowspan="2" align="center">
                     <button type="button" id="ref"><b>질문하러 GO</b></button>
                         <button type="button" id="post">
-                            <div id="sp1">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</div><br>
-                            <span id="sp2">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</span>
+                            <div id="sp1">제목입니다</div><br>
+                            <span id="sp2">내용입니다</span>
                         </button><br><br>
                         <button type="button" id="post">
-                            <div id="sp1">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</div><br>
-                            <span id="sp2">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</span>
+                            <div id="sp1">제목입니다</div><br>
+                            <span id="sp2">내용입니다</span>
                         </button><br><br>
                         <button type="button" id="post">
-                            <div id="sp1">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</div><br>
-                            <span id="sp2">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</span>
+                            <div id="sp1">제목입니다</div><br>
+                            <span id="sp2">내용입니다</span>
                         </button><br><br>
                         <button type="button" id="post">
-                            <div id="sp1">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</div><br>
-                            <span id="sp2">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</span>
+                            <div id="sp1">제목입니다</div><br>
+                            <span id="sp2">내용입니다</span>
                         </button><br><br>
                         <button type="button" id="post">
-                            <div id="sp1">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</div><br>
-                            <span id="sp2">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구</span>
+                            <div id="sp1">제목입니다</div><br>
+                            <span id="sp2">내용입니다</span>
+                        </button><br><br>
+                        <button type="button" id="post">
+                            <div id="sp1">제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다</div><br>
+                            <span id="sp2">내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다</span>
                         </button>
                     <br><button type="button" id="bdown">▼</button>
                   </td>
@@ -209,14 +205,11 @@
                 </td>
             </tr>
         </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3">
-                    ☆  BAEWHA   @웹플팀 - 소유진, 유지선, 이찬희, 이시연  ☆
-                </td>
-            </tr>
-        </tfoot>
     </table>
-       
+    
+    <footer>
+        ☆ BAEWHA Women's University ☆<br><br>
+        @웹플팀 : 소유진, 유지선, 이찬희, 이시연
+    </footer>
 </body>
 </html>
