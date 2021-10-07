@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Htest2</title>
+    <title>응, 답하라 8282</title>
 </head>
 <style>
     body{
@@ -21,17 +21,17 @@
     }
     
     table{  
-        border-spacing: 20px;  margin-top: 2.5%;  /*table-layout: fixed; */
-        white-space: nowrap;   /*text-overflow: ellipsis;*/
+        border-spacing: 20px;  margin-top: 2.5%;  
+        white-space: nowrap;  /*table-layout: fixed; text-overflow: ellipsis;*/
     }  
 
     button{ font-family: 'Courier New', Courier, monospace;  cursor: pointer; }
 
-    thead > tr > th > img{ width: 430px; height: 70px; margin-left: 250px; }
+    thead > tr > th > img{ width: 430px; height: 70px; margin-left: 220px; }
 
     #ranking{
         color: white;
-        font-size: 1em;
+        font-size: 1.1em;
         vertical-align: top;
     }
     #ranking > b > #rkh{
@@ -55,14 +55,14 @@
         background-color: rgb(255, 0, 255);  color: pink;
         position: absolute;
         top: 25px;   right: 65px; 
-        font-size: medium;
+        font-size: medium;  font-weight: bold;
     }
     #post{ 
-        width: 750px;  height: 70px;
+        width: 700px;  height: 70px;
         position: relative;  text-align: left; 
         background-color: rgb(217, 244, 255); 
-        border-radius: 30px; border: 5px ridge skyblue;
-        padding: 0 5% 0 5%;
+        border-radius: 30px;  border: 5px ridge skyblue;
+        padding: 0 5%;
      }
      #post:active{ 
         border-right: 5px ridge rgb(84, 125, 141);  
@@ -75,7 +75,7 @@
         font-weight: bold;
         overflow: hidden;
     }
-    #post > #sp2{ font-size: 1.2em; color: gray; text-overflow: hidden;  }
+    #post > #sp2{ font-size: 1.2em; color: gray;  overflow: hidden;  }
     #bdown{ 
         font-size: 5; 
         background-color: gray; 
@@ -104,7 +104,6 @@
     #category{
         list-style-type: none;
         background-color: rgba(255, 255, 255, 0.452);
-        /*border: 3px solid #25b6a2;*/
         border:none;
     }
     #category > li{
@@ -116,11 +115,25 @@
     #category > li > a:link, a:visited { color: gold; text-decoration: none; }
     #category > li > a:hover { color: blue;}
 
-    footer{
-        color: white;   
-        width: 100%;  height: 80px; position: absolute;
-        bottom: 0;  text-align: center;
+    tfoot{  color: white;   text-align: center;  bottom: auto; }
+    tfoot > tr > td{ line-height: 160%; }
+
+    /*<질문하러 GO> 버튼 title 속성 변경*/
+    .hover{ position: relative;  display: block; } 
+    .hover .hovertitle{ 
+        visibility: hidden;
+        width: 250px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 150%;
+        left: 50%;
+        margin-left: -60px;
     }
+    .hover:hover  .hovertitle{ visibility: visible; }
 </style>
 
 <body>
@@ -131,7 +144,7 @@
     <table align = "center">  
         <thead>
             <tr>
-                <th colspan="2" align="left">
+                <th colspan="2" align="left" title="그 시절이 떠오르는 이곳에서 고민 해결하세요^^">
                     <img src="logo.png">
                 </th>
                 <th></th>
@@ -160,37 +173,39 @@
                  </b></td>
 
                   <td id="main" rowspan="2" align="center">
-                    <button type="button" id="ref"><b>질문하러 GO</b></button>
+                    <button type="button" id="ref"  class="hover">질문하러 GO
+                        <span class="hovertitle">로그인해야 할 수 있어요😊 ⇒</span>
+                    </button>
                         <button type="button" id="post">
-                            <div id="sp1">제목입니다</div><br>
-                            <span id="sp2">내용입니다</span>
+                            <div id="sp1">제목입니다제목입니다제목입니다제목다제목입니다</div><br>
+                            <div id="sp2">내용입니다내용입니다내용입니다내용다</div>
                         </button><br><br>
                         <button type="button" id="post">
-                            <div id="sp1">제목입니다</div><br>
-                            <span id="sp2">내용입니다</span>
+                            <div id="sp1">제목입니다제목입니다제목입니다제입니다</div><br>
+                            <div id="sp2">내용입니다내용입니다내용입입니다내용입니다내용입니다</div>
                         </button><br><br>
                         <button type="button" id="post">
-                            <div id="sp1">제목입니다</div><br>
-                            <span id="sp2">내용입니다</span>
+                            <div id="sp1">제목입니다제목입니다제목입</div><br>
+                            <div id="sp2">내용입니다내용입니다내용입니니다내용입니다</div>
                         </button><br><br>
                         <button type="button" id="post">
-                            <div id="sp1">제목입니다</div><br>
-                            <span id="sp2">내용입니다</span>
+                            <div id="sp1">제목입니다제목입니다제목입다제목입니다제목입니다</div><br>
+                            <div id="sp2">내용입니다내용입니다내용입니니다내용입니다내용입니다내용입니다</div>
                         </button><br><br>
                         <button type="button" id="post">
-                            <div id="sp1">제목입니다</div><br>
-                            <span id="sp2">내용입니다</span>
+                            <div id="sp1">제목입니다제목입니다제목입니다제목입니다</div><br>
+                            <div id="sp2">내용입니다내용입니다내용입니다내입니다내용입니다내용입니다</div>
                         </button><br><br>
                         <button type="button" id="post">
                             <div id="sp1">제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다</div><br>
-                            <span id="sp2">내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다</span>
+                            <div id="sp2">내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다</div>
                         </button>
                     <br><button type="button" id="bdown">▼</button>
                   </td>
                   
                   <td id="home">
-                    <button type="button" onclick="location.href='login.html'"><b>&emsp; Login &emsp;</b></button><br><br>
-                    <button type="button" onclick="location.href='sign.html'"><b>Membership</b></button>
+                    <button type="button" onclick="location.href='login.html'" title="로그인"><b>&emsp; Login &emsp;</b></button><br><br>
+                    <button type="button" onclick="location.href='sign.html'" title="회원가입"><b>Membership</b></button>
                   </td>
             </tr>
             <tr>
@@ -205,11 +220,16 @@
                 </td>
             </tr>
         </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    ☆ BAEWHA Women's University ☆<br >
+                    @웹플팀 : 소유진, 유지선, 이찬희, 이시연
+                </td>
+            </tr>
+        </tfoot>
     </table>
-    
-    <footer>
-        ☆ BAEWHA Women's University ☆<br><br>
-        @웹플팀 : 소유진, 유지선, 이찬희, 이시연
-    </footer>
+
 </body>
 </html>
