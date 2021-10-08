@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="membership.css">
 </head>
 <body>
     <video autoplay muted loop poster="background.mp4">
@@ -12,12 +12,18 @@
                 <div id="home" title="홈화면으로 가기"><a href="Home.html">8282 응, 답하라</a></div>
             <form action="#" method="post">
                 <div class="int-area">
-                 <label for="text">아이디&emsp;
-                     <input type="id" name="id" placeholder="아이디를 입력하세요.&ensp;">
+                 <label for="nickname">닉네임&emsp;&emsp;&emsp;&ensp;&ensp;
+                     <input id="nickname" type="text" name="nick" placeholder="글자수 10자 이하.&ensp;">
                  </label><br>
-                 <label for="text">비밀번호
-                     <input type="password" name="pw" placeholder="비밀번호를 입력하세요.">
-                 </label>
+                 <label for="id">아이디&emsp;&emsp;&emsp;&ensp;&ensp;
+                     <input id="id" type="id" name="id" placeholder="아이디를 입력하세요.&ensp;">
+                 </label><br>
+                 <label for="password">비밀번호&emsp;&emsp;&emsp;
+                     <input id="password" type="password" name="pw" placeholder="비밀번호를 입력하세요.&ensp;">
+                 </label><br>
+                 <label for="text">비밀번호 재확인
+                    <input id="passwordok" type="password" name="pwok" placeholder="비밀번호를 재입력하세요.&ensp;">
+                </label><br>
                 </div>
                 <div class="btn-area">
                     <button type="submit"><a href="#">OK</a></button>

@@ -29,19 +29,19 @@ body{
 
 .login-form{ 
     background-color: blue;
-    padding: 20px 0;
+    padding: 25px ;
     z-index: 1;
 }
 #home{
     color: white;
     font-size: 50px; 
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 
 .login-form, .box{
     width: 500px;
-    height: 350px;
+    height: 400px;
     position: absolute;
     margin-top: 350px;
 }
@@ -53,7 +53,7 @@ body{
 }
 
 .int-area {
-    margin-top: 70px;
+    margin-top: 50px;
     padding-bottom: 5%;
 }
 .int-area label{
@@ -74,7 +74,7 @@ body{
     font-size: 20px;
     /*border: none;*/
     border-radius: 25px;
-    margin-top: 20px;
+    margin-top: -13px;
 }
 a:link, a:visited { color: white; text-decoration: none; }
 a:hover { color: purple;}

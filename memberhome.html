@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8282 응, 답하라</title>
+    <title>응, 답하라 8282</title>
 </head>
 <style>
     body{
@@ -51,47 +51,41 @@
         background-color: rgba(128, 128, 128, 0.527);
         position: relative;
     }
-    #go_back{ 
-        background-color: rgb(255, 0, 255);  color: violet;
+    #ref{ 
+        background-color: rgb(255, 0, 255);  color: pink;
         position: absolute;
         top: 25px;   right: 65px; 
         font-size: medium;  font-weight: bold;
     }
-    #post-form{ 
-        width: 85%; height: 69%; 
-        background-color: rgb(255, 183, 49); 
-        margin-top: 4%;
-        border-radius: 30px; border: ridge orange;
+    #post{ 
+        width: 700px;  height: 70px;
+        position: relative;  text-align: left; 
+        background-color: rgb(217, 244, 255); 
+        border-radius: 30px;  border: 5px ridge skyblue;
+        padding: 0 5%;
+     }
+     #post:active{ 
+        border-right: 5px ridge rgb(84, 125, 141);  
+        border-bottom: 5px ridge rgb(58, 86, 97); 
     }
-    #post-form > label{ font-size: xx-large; color: rgb(43, 46, 73); font-weight: 900; }
-    #title{
-        font-size: x-large; 
-        margin: 5% 0 2% 0;
-        width: 55%;
-        padding: 3px;
-        box-sizing: border-box;
-        border: solid rgb(43, 46, 73);
-        border: none;
-        /*border-top: none; border-left: none; border-right: none;*/
+    #post > #sp1 { 
+        font-size: 2em; 
+        margin-bottom: -13px; 
+        color: black;
+        font-weight: bold;
+        overflow: hidden;
     }
-    #post-form > span{ color: blue; font-weight: bold; }
-    textarea{
-        margin: 1% 0 2% 0;
-        width: 75%; 
-        font-size: x-large; 
-        border: 3px solid rgb(43, 46, 73);
-        padding: 10px;
-        box-sizing: border-box;
-        resize: none;
-    }
-    #completion{
-        color: white;   background-color: blue;
-        font-size:medium;
-        margin-bottom: 13px;  
+    #post > #sp2{ font-size: 1.2em; color: gray;  overflow: hidden;  }
+    #bdown{ 
+        font-size: 5; 
+        background-color: gray; 
+        padding-left: 10px;  padding-right: 10px;
+        position:absolute;
+        bottom: 30px;
     }
 
     #home{
-        width: 240px; height: 200px;
+        width: 240px;
         background-color: darkblue;
         text-align: center;
         font-size: 22px;
@@ -109,7 +103,6 @@
         box-shadow: 2px 2px 2px black;
         transition-duration: 0.3s;
     }
-
     #home > button:active{
         margin-left: 3px;   margin-top: 3px;
         box-shadow: none;
@@ -131,6 +124,23 @@
 
     tfoot{  color: white;   text-align: center;  bottom: auto; }
     tfoot > tr > td{ line-height: 160%; }
+
+    /*<질문하러 GO> 버튼 title 속성 변경*/
+    .hover{ position: relative;  display: block; } 
+    .hover .hovertitle{ 
+        visibility: hidden;
+        width: 250px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 150%;
+        left: 50%;
+        margin-left: -60px;
+    }
+    .hover:hover  .hovertitle{ visibility: visible; }
 </style>
 
 <body>
@@ -170,22 +180,32 @@
                  </b></td>
 
                   <td id="main" rowspan="2" align="center">
-                        <button type="button" id="go_back" title="뒤로가기"> GO BACK</button>
-                        <form id="post-form" method="POST">
-                            <label for="title">제목 </label>
-                            <input id="title" type="text" name="title" maxlength="21" placeholder="20자 이내로 입력하세요.">
-                            <br><br>
-                            <b> 주제 ▶</b>&emsp;&emsp; 
-                            <span>
-                                <input id="family" type="radio" name="category" value="f">가족&emsp;
-                                <input id="love" type="radio" name="category" value="l">사랑&emsp;
-                                <input id="friend" type="radio" name="category" value="fs">우정&emsp;
-                                <input id="worry" type="radio" name="category" value="w">고민&emsp;
-                                <input id="other" type="radio" name="category" value="o">기타&emsp;
-                            </span><br/>
-                            <textarea name="contents" rows="15" maxlength="250"></textarea><br/>
-                            <input id="completion" type="submit" name="completion" value="작성완료">
-                        </form>
+                    <button type="button" id="ref"  class="hover">질문하러 GO</button>
+                        <button type="button" id="post">
+                            <div id="sp1">제목입니다제목입니다제목입니다제목다제목입니다</div><br>
+                            <div id="sp2">내용입니다내용입니다내용입니다내용다</div>
+                        </button><br><br>
+                        <button type="button" id="post">
+                            <div id="sp1">제목입니다제목입니다제목입니다제입니다</div><br>
+                            <div id="sp2">내용입니다내용입니다내용입입니다내용입니다내용입니다</div>
+                        </button><br><br>
+                        <button type="button" id="post">
+                            <div id="sp1">제목입니다제목입니다제목입</div><br>
+                            <div id="sp2">내용입니다내용입니다내용입니니다내용입니다</div>
+                        </button><br><br>
+                        <button type="button" id="post">
+                            <div id="sp1">제목입니다제목입니다제목입다제목입니다제목입니다</div><br>
+                            <div id="sp2">내용입니다내용입니다내용입니니다내용입니다내용입니다내용입니다</div>
+                        </button><br><br>
+                        <button type="button" id="post">
+                            <div id="sp1">제목입니다제목입니다제목입니다제목입니다</div><br>
+                            <div id="sp2">내용입니다내용입니다내용입니다내입니다내용입니다내용입니다</div>
+                        </button><br><br>
+                        <button type="button" id="post">
+                            <div id="sp1">제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다</div><br>
+                            <div id="sp2">내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다</div>
+                        </button>
+                    <br><button type="button" id="bdown">▼</button>
                   </td>
                   
                   <td id="home">
@@ -202,9 +222,9 @@
                     <li><a href="#">#사랑</a></li>
                     <li><a href="#">#우정</a></li>
                     <li><a href="#">#고민</a></li>
-                    <li><a href="#">#기타</a></li><br><br>
+                    <li><a href="#">#기타</a></li><!--<br><br>
                     <li><a href="#">☞ 작성한 게시글</a></li>
-                    <li><a href="#">☞ 답변한 게시글</a></li>
+                    <li><a href="#">☞ 답변한 게시글</a></li>-->
                 </td>
             </tr>
         </tbody>
