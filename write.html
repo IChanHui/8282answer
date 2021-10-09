@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8282 응, 답하라</title>
+    <title>8282 응, 답하라 ~작성중~</title>
 </head>
 <style>
     body{
-        background-color: #030D98;
+        background-color: #030D98; color: white;
         padding: 0px;  margin: 0px;
         font-family: 'Courier New', Courier, monospace;
     }
@@ -47,7 +47,7 @@
 
     #main{
         width: 800px;  
-        border: 5px solid blue;
+        border: 5px solid rgba(0, 0, 255, 0.589);
         background-color: rgba(128, 128, 128, 0.527);
         position: relative;
     }
@@ -58,27 +58,24 @@
         font-size: medium;  font-weight: bold;
     }
     #post-form{ 
-        width: 85%; height: 69%; 
-        background-color: rgb(247, 166, 17); 
+        width: 85%; 
+        background-color: rgb(255, 183, 49); 
         margin-top: 4%;
-        border-radius: 30px; border: ridge orange;
+        border-radius: 30px; border: 10px ridge orange;
     }
-    #post-form > label{ font-size: xx-large; color: rgb(43, 46, 73); font-weight: 900; }
+    #post-form > label{ font-size: x-large; color: rgb(43, 46, 73); font-weight: 900; }
     #title{
-        font-size: x-large; 
-        margin: 5% 0 2% 0;
+        font-size: large; 
+        margin: 6% 0 2% 0;
         width: 55%;
-        padding: 3px;
-        box-sizing: border-box;
-        border: 2px solid rgb(43, 46, 73);
-        /*border: none;*/
-        /*border-top: none; border-left: none; border-right: none;*/
+        border-bottom: 5px solid rgb(43, 46, 73);
+        border-top: none; border-left: none; border-right: none;
     }
     #post-form > span{ color: blue; font-weight: bold; }
     textarea{
         margin: 1% 0 2% 0;
-        width: 75%; 
-        font-size: x-large; 
+        width: 70%; 
+        font-size: large; 
         border: 2px solid rgb(43, 46, 73);
         padding: 10px;
         box-sizing: border-box;
@@ -87,32 +84,36 @@
     #completion{
         color: white;   background-color: blue;
         font-size:medium;
-        margin-bottom: 13px;  
+        margin-bottom: 30px;  
     }
 
     #home{
         width: 240px; height: 200px;
-        background-color: darkblue;
+        background-color: rgb(2, 2, 117);  color: white;
+        padding: 5px; border: 1px solid black;
         text-align: center;
-        font-size: 22px;
-        padding: 5px;
-        color: white;
     }
-    #home > img{width: 22px; height: 22px;}
-
+    #home > #hrank{ 
+        display: inline-block; width: 60%; height: 15%;
+        margin: 10px 0 0px -95px ;
+        font-size: 18px; color: rgb(0, 252, 147);  font-weight: bold;
+    }
+    #home > img{ 
+        width: 40px; height: 40px; float: right; 
+        margin: -10px 15px 0 0; 
+    }
+    #home > div{ text-align: center; }
+    #home > #nick{ 
+        margin: 10px 0 -15px 0;
+        font-size: xx-large; font-weight: bold;
+    }
+    #home > #score{ font-size: x-large; margin-bottom: 5px;  }
     #home > button { 
-        font-size: 15px;
+        font-size: 5px 10px; 
         color: white;   background-color: blue;
-        margin-top: 8px;
-        padding-right: 10px;
-        padding-left: 10px;
+        border-radius: 25px; 
         box-shadow: 2px 2px 2px black;
         transition-duration: 0.3s;
-    }
-
-    #home > button:active{
-        margin-left: 3px;   margin-top: 3px;
-        box-shadow: none;
     }
 
     #category{
@@ -170,30 +171,34 @@
                  </b></td>
 
                   <td id="main" rowspan="2" align="center">
-                        <button type="button" id="go_back" title="뒤로가기"> GO BACK</button>
+                        <button type="button" id="go_back" title="뒤로가기" onclick="location.href='memberHome.html'">
+                            GO BACK
+                        </button>
                         <form id="post-form" method="POST">
-                            <label for="title">제목 </label>
-                            <input id="title" type="text" name="title" maxlength="21" placeholder="20자 이내로 입력하세요.">
+                            <label for="title">제목: </label>
+                            <input id="title" type="text" name="title" maxlength="10" placeholder="10자 이내로 입력하세요.">
                             <br><br>
-                            &ensp;<b> 주제 ▶</b>&emsp;
+                            &ensp;<b> 주제 ▶</b>&emsp;&nbsp;
                             <span>
-                                <input id="family" type="radio" name="category" value="f">가족&emsp;
-                                <input id="love" type="radio" name="category" value="l">사랑&emsp;
-                                <input id="friend" type="radio" name="category" value="fs">우정&emsp;
-                                <input id="worry" type="radio" name="category" value="w">고민&emsp;
+                                <input id="family" type="radio" name="category" value="f">가족&ensp;
+                                <input id="love" type="radio" name="category" value="l">사랑&ensp;
+                                <input id="friend" type="radio" name="category" value="fs">우정&ensp;
+                                <input id="worry" type="radio" name="category" value="w">고민&ensp;
                                 <input id="other" type="radio" name="category" value="o">기타&emsp;
                             </span><br/>
-                            <textarea name="contents" rows="15" maxlength="250"></textarea><br/>
+                            <textarea name="contents" rows="15" maxlength="250"></textarea><br/><br/>
                             <input id="completion" type="submit" name="completion" value="작성완료">
                         </form>
                   </td>
                   
                   <td id="home">
-                    96등
-                    <img src="air.svg"><br>
-                    남산 칠봉이<br>
-                    890점<br>
-                    <button type="button" onclick="location.href='Home.html'"><b>Logout</b><br></button>
+                    <span id="hrank">231등</span>
+                    <img id="himg" src="air.svg"><br>
+                    <div id="nick">남산 칠봉이</div><br>
+                    <div id="score">890점</div><br>
+                    <button type="button" onclick="location.href='Home.html'" title="로그아웃">
+                        Logout
+                    </button>
                   </td>
             </tr>
             <tr>

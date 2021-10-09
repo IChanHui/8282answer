@@ -32,12 +32,14 @@ body{
     padding: 20px 0;
     z-index: 1;
 }
+
 #home{
     color: white;
     font-size: 50px; 
     margin-bottom: 30px;
 }
-
+p > a:link, a:visited { color: white; text-decoration: none; }
+p > a:hover { color: darkblue;}
 
 .login-form, .box{
     width: 500px;
@@ -70,14 +72,14 @@ body{
 
 .btn-area button{
     width: 20%; height: 35px;
-    background: blue;
-    font-size: 20px;
+    background: rgb(35, 35, 255);
+    font-size: 15px;
     /*border: none;*/
     border-radius: 25px;
     margin-top: 20px;
 }
-a:link, a:visited { color: white; text-decoration: none; }
-a:hover { color: purple;}
+button > a { text-decoration: none; }
+button > a:hover { color: purple; }
 
 footer{
     position: absolute;

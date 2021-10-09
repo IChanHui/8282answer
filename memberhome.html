@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>응, 답하라 8282</title>
+    <title>8282 응, 답하라</title>
 </head>
+
 <style>
     body{
         background-color: #030D98;
@@ -85,27 +86,32 @@
     }
 
     #home{
-        width: 240px;
-        background-color: darkblue;
+        width: 240px; height: 200px;
+        background-color: rgb(2, 2, 117);  color: white;
+        padding: 5px; border: 1px solid black;
         text-align: center;
-        font-size: 22px;
-        padding: 5px;
-        color: white;
     }
-    #home > img{width: 22px; height: 22px;}
-
+    #home > #hrank{ 
+        display: inline-block; width: 60%; height: 15%;
+        margin: 10px 0 0px -95px ;
+        font-size: 18px; color: rgb(0, 252, 147);  font-weight: bold;
+    }
+    #home > img{ 
+        width: 40px; height: 40px; float: right; 
+        margin: -10px 15px 0 0; 
+    }
+    #home > div{ text-align: center; }
+    #home > #nick{ 
+        margin: 10px 0 -15px 0;
+        font-size: xx-large; font-weight: bold;
+    }
+    #home > #score{ font-size: x-large; margin-bottom: 5px;  }
     #home > button { 
-        font-size: 15px;
+        font-size: 5px 10px; 
         color: white;   background-color: blue;
-        margin-top: 8px;
-        padding-right: 10px;
-        padding-left: 10px;
+        border-radius: 25px; 
         box-shadow: 2px 2px 2px black;
         transition-duration: 0.3s;
-    }
-    #home > button:active{
-        margin-left: 3px;   margin-top: 3px;
-        box-shadow: none;
     }
 
     #category{
@@ -180,7 +186,9 @@
                  </b></td>
 
                   <td id="main" rowspan="2" align="center">
-                    <button type="button" id="ref"  class="hover">질문하러 GO</button>
+                    <button type="button" id="ref"  class="hover" onclick="location.href='write.html'">
+                        작성하러 GO
+                    </button>
                         <button type="button" id="post">
                             <div id="sp1">제목입니다제목입니다제목입니다제목다제목입니다</div><br>
                             <div id="sp2">내용입니다내용입니다내용입니다내용다</div>
@@ -209,11 +217,13 @@
                   </td>
                   
                   <td id="home">
-                    96등
-                    <img src="air.svg"><br>
-                    남산 칠봉이<br>
-                    890점<br>
-                    <button type="button" onclick="location.href='Home.html'"><b>Logout</b><br></button>
+                    <span id="hrank">231등</span>
+                    <img id="himg" src="air.svg"><br>
+                    <div id="nick">남산 칠봉이</div><br>
+                    <div id="score">890점</div><br>
+                    <button type="button" onclick="location.href='Home.html'" title="로그아웃">
+                        Logout
+                    </button>
                   </td>
             </tr>
             <tr>
@@ -222,9 +232,9 @@
                     <li><a href="#"><b>#사랑</b></a></li>
                     <li><a href="#"><b>#우정</b></a></li>
                     <li><a href="#"><b>#고민</b></a></li>
-                    <li><a href="#"><b>#기타</b></a></li><!--<br><br>
-                    <li><a href="#">☞ 작성한 게시글</a></li>
-                    <li><a href="#">☞ 답변한 게시글</a></li>-->
+                    <li><a href="#"><b>#기타</b></a></li><br><br>
+                    <li><a href="#"><b>☞ 작성한 게시글</b></a></li>
+                    <li><a href="#"><b>☞ 답변한 게시글</b></a></li>
                 </td>
             </tr>
         </tbody>
