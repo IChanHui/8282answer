@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8282 응, 답하라 ~작성중~</title>
+    <title>8282 응, 답하라 ~게시글~</title>
 </head>
 <style>
     body{
@@ -47,7 +47,7 @@
 
     #main{
         width: 800px;  
-        border: 5px solid rgba(0, 0, 255, 0.589);
+        border: 5px solid blue;
         background-color: rgba(128, 128, 128, 0.527);
         position: relative;
     }
@@ -57,11 +57,11 @@
         top: 25px;   right: 65px; 
         font-size: medium;  font-weight: bold;
     }
-    #post-form{ 
-        width: 85%; 
-        background-color: rgb(255, 183, 49); 
-        margin-top: 4%;
-        border-radius: 30px; border: 10px ridge orange;
+    #posting{ 
+        width: 600px;
+        background-color: rgb(217, 244, 255); 
+        border-radius: 30px;  border: 5px ridge skyblue;
+        padding: 0 5%; margin-top: 4%;
     }
     #post-form > label{ font-size: x-large; color: rgb(43, 46, 73); font-weight: 900; }
     #title{
@@ -174,7 +174,7 @@
                         <button type="button" id="go_back" title="뒤로가기" onclick="location.href='memberHome.html'">
                             GO BACK
                         </button>
-                        <form id="post-form" method="POST">
+                        <form id="posting" method="POST">
                             <label for="title">제목: </label>
                             <input id="title" type="text" name="title" maxlength="20" placeholder="20자 이내로 입력하세요.">
                             <br><br>
