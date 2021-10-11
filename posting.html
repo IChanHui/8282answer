@@ -59,33 +59,12 @@
     }
     #posting{ 
         width: 600px;
-        background-color: rgb(217, 244, 255); 
+        background-color: rgb(217, 244, 255);  color: black;
         border-radius: 30px;  border: 5px ridge skyblue;
-        padding: 0 5%; margin-top: 4%;
+        padding: 0 3%; margin-top: 4%; 
     }
-    #post-form > label{ font-size: x-large; color: rgb(43, 46, 73); font-weight: 900; }
-    #title{
-        font-size: large; 
-        margin: 6% 0 2% 0;
-        width: 55%;
-        border-bottom: 5px solid rgb(43, 46, 73);
-        border-top: none; border-left: none; border-right: none;
-    }
-    #post-form > span{ color: blue; font-weight: bold; }
-    textarea{
-        margin: 1% 0 2% 0;
-        width: 70%; 
-        font-size: large; 
-        border: 2px solid rgb(43, 46, 73);
-        padding: 10px;
-        box-sizing: border-box;
-        resize: none;
-    }
-    #completion{
-        color: white;   background-color: blue;
-        font-size:medium;
-        margin-bottom: 30px;  
-    }
+    #thead{ font-weight: bold; font-size: large; }
+    #comment{ width: 100%; }
 
     #home{
         width: 240px; height: 200px;
@@ -174,20 +153,29 @@
                         <button type="button" id="go_back" title="뒤로가기" onclick="location.href='memberHome.html'">
                             GO BACK
                         </button>
-                        <form id="posting" method="POST">
-                            <label for="title">제목: </label>
-                            <input id="title" type="text" name="title" maxlength="20" placeholder="20자 이내로 입력하세요.">
-                            <br><br>
-                            &ensp;<b> 주제 ▶</b>&emsp;&nbsp;
-                            <span>
-                                <input id="family" type="radio" name="category" value="f">가족&ensp;
-                                <input id="love" type="radio" name="category" value="l">사랑&ensp;
-                                <input id="friend" type="radio" name="category" value="fs">우정&ensp;
-                                <input id="worry" type="radio" name="category" value="w">고민&ensp;
-                                <input id="other" type="radio" name="category" value="o">기타&emsp;
-                            </span><br/>
-                            <textarea name="contents" rows="15" maxlength="250"></textarea><br/><br/>
-                            <input id="completion" type="submit" name="completion" value="작성완료">
+                        <form id="posting">
+                            <table>
+                                <tr>
+                                    <td id="thead">내용 제목</td>
+                                    <td>작성자 닉네임 <button type="button" title="신고">😡</button></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">작성한 내용이 보이는 부분입니다 작성 내용을 보이게 해주세요 여기는 작성한 내용이 보여야합니다</td>
+                                </tr>
+                                <tr>
+                                    <td>댓글이 보이는 부분입니다</td>
+                                    <td>답변자 닉네임 
+                                        <button type="button" title="추천">👍</button>
+                                        <button type="button" title="신고">😡</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input id="comment" type="text" placeholder="댓글을 입력해 주세요:)">
+                                        <button type="submit"></button>
+                                    </td>
+                                </tr>
+                            </table>
                         </form>
                   </td>
                   

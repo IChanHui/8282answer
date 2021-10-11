@@ -58,10 +58,7 @@ p > a:hover { color: darkblue;}
     margin-top: 50px;
     padding-bottom: 5%;
 }
-.int-area label{
-    width: 100%;
-    font-size: px;
-}
+.int-area label{  width: 100%; }
 .int-area input{
     border: 2px solid gray;
     font-size: 15px; 
