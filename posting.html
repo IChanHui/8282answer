@@ -59,13 +59,35 @@
     }
     #posting{ 
         width: 600px;
+        height: 500px;
         background-color: rgb(217, 244, 255);  color: black;
         border-radius: 30px;  border: 5px ridge skyblue;
         padding: 0 3%; margin-top: 4%; overflow: auto;
+        /*text-overflow:clip;*/
     }
-    #posting > table{  }
-    #thead{ font-weight: bold; font-size: large; }
-    #comment{ width: 100%; }
+    #thead{
+        font-size: 1rem;
+    }
+    #text{
+        padding-bottom: 15px;
+        border-bottom: 1px solid black;
+        
+    }
+    #answer{
+        padding-bottom: 15px;
+        border-bottom: 1px solid gray;
+        
+    }
+
+    #comment{ 
+        width: 550px; 
+        padding: 6px;
+        box-sizing: border-box;
+        margin-top: 230px;
+        
+    }
+
+       
 
     #home{
         width: 240px; height: 200px;
@@ -157,23 +179,25 @@
                         <form id="posting">
                             <table>
                                 <tr>
-                                    <td id="thead">내용 제목</td>
+                                    <td id="thead"><strong>내용 제목</strong></td>
                                     <td>작성자 닉네임 <button type="button" title="신고">😡</button></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">작성한 내용이 보이는 부분입니다 작성 내용을 보이게 해주세요 여기는 작성한 내용이 보여야합니다</td>
+                                    <td id="text" colspan="2">작성한 내용이 보이는 부분입니다.<br>
+                                        작성 내용을 보이게 해주세요 여기는 작성한 내용이 보여야합니다.</td>
                                 </tr>
                                 <tr>
-                                    <td>댓글이 보이는 부분입니다</td>
-                                    <td>답변자 닉네임 
+                                    <td id="answer">댓글이 보이는 부분입니다
+                                     <td>답변자 닉네임 
                                         <button type="button" title="추천">👍</button>
                                         <button type="button" title="신고">😡</button>
+                                     </td>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
                                         <input id="comment" type="text" placeholder="댓글을 입력해 주세요:)">
-                                        <button type="submit"></button>
+                                        <button type="submit" id="on"></button>
                                     </td>
                                 </tr>
                             </table>
