@@ -69,22 +69,36 @@
         font-size: 1.5rem;
     }
     #text{
+        padding-top: 15px;
         padding-bottom: 15px;
         border-bottom: 1px solid black;
-        
     }
     #answer{
         width: 400px;
         padding-bottom: 15px;
         border-bottom: 1px solid#999;
     }
+    #an{
+        font-size: 15px;
+    }
+    #se{
+        text-align: center;
+        width: 350px;
+    }
 
     #comment{ 
-        width: 550px; 
+        width: 100%;
         padding: 6px;
         box-sizing: border-box;
         margin-top: 230px;
-        
+        outline: none;
+        float: left;
+        border: 0px; 
+    }
+    #on{
+        background-color: gray;
+        border: 0px;
+        float: right;
     }
 
     #home{
@@ -185,8 +199,16 @@
                                         작성 내용을 보이게 해주세요 여기는 작성한 내용이 보여야합니다.</td>
                                 </tr>
                                 <tr>
-                                    <td id="answer">댓글이 보이는 부분입니다
-                                     <td>답변자 닉네임 
+                                    <td id="answer">댓글이 보이는 부분입니다.
+                                     <td id="an">답변자 닉네임 
+                                        <button type="button" title="추천">👍</button>
+                                        <button type="button" title="신고">😡</button>
+                                     </td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="answer">댓글이 보이는 부분입니다.
+                                     <td id="an">답변자 닉네임 
                                         <button type="button" title="추천">👍</button>
                                         <button type="button" title="신고">😡</button>
                                      </td>
@@ -194,9 +216,11 @@
                                 </tr>
                                 <tr>
                                     <td colspan="2">
+                                        <div class="se">
                                         <input id="comment" type="text" placeholder="댓글을 입력해 주세요:)">
-                                        <button type="submit" id="on"></button>
-                                    </td>
+                                        <button type="submit" id="on">등록</button>
+                                        </div>
+                                    </td>    
                                 </tr>
                             </table>
                         </form>
