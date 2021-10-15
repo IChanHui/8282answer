@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 홈페이지</title>
+    <style>
+        body{ 
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+         }
+
+        a{ font-size: 50px;  }
+        a:link{ color: black; text-decoration: none; }
+        a:visited{ color: black; }
+        a:hover{ color: blue;}
+
+        .login{
+            position: absolute;
+            margin: 150px 0  0 500px;
+            border: 3px solid black;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .login h1{
+            text-align: center;
+            padding: auto;
+            margin-top: 100px;
+            font-size: 50px;
+        }
+        .login form{
+            padding: 0 40px;
+        }
+        .field{
+            border-bottom: 10px;
+            margin-top: 30px;
+        }
+        .field input{
+            font-size: 30px;
+            width: 55%;
+            padding: 5px;
+        }
+        .field label{
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+        input[type="submit"]{
+            font-size: 30px;
+            margin-top: 50px;
+            padding: 10px;
+            width: 50%;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>8282 응,답하라</h1>
+        <form method="POST">
+            <div class="field">
+                <label for="text">아이디&emsp;</label>
+                <input type="text">
+            </div>
+            <div class="field">
+                <label>비밀번호</label>
+                <input type="password">
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

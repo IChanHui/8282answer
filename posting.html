@@ -68,37 +68,47 @@
     #thead{
         font-size: 1.5rem;
     }
+    .thead_id{
+        display: inline-block;
+        font-size: 15px;
+        margin-left: 320px;
+    }
+
     #text{
         padding-top: 15px;
-        padding-bottom: 15px;
+        padding-bottom: 20px;
         border-bottom: 1px solid black;
     }
+
     #answer{
-        width: 400px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid#999;
+        width: 500px;
+        vertical-align: middle;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(204, 203, 203);
     }
-    #an{
+    .an_id{
+        display: inline-block;
         font-size: 15px;
-    }
-    #se{
-        text-align: center;
-        width: 350px;
+        margin-left: 200px;
     }
 
     #comment{ 
-        width: 100%;
-        padding: 6px;
+        width: 470px;
+        padding: 3px;
         box-sizing: border-box;
         margin-top: 230px;
         outline: none;
-        float: left;
         border: 0px; 
+        font-size: 20px;
     }
-    #on{
-        background-color: gray;
-        border: 0px;
-        float: right;
+    input[type="submit"]{
+        width: 100px;
+        padding: 3px;
+        font-size: 20px;
+        margin-left: -10px;
+        border: none;
+        display: inline;
+        color: blue;
     }
 
     #home{
@@ -191,8 +201,9 @@
                         <form id="posting">
                             <table>
                                 <tr>
-                                    <td id="thead"><strong>내용 제목</strong></td>
-                                    <td>작성자 닉네임 <button type="button" title="신고">😡</button></td>
+                                    <td id="thead" colspan="2"><strong>내용 제목</strong>
+                                    <div class="thead_id">작성자 닉네임 <button type="button" title="신고">😡</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td id="text" colspan="2">작성한 내용이 보이는 부분입니다.<br>
@@ -200,26 +211,23 @@
                                 </tr>
                                 <tr>
                                     <td id="answer">댓글이 보이는 부분입니다.
-                                     <td id="an">답변자 닉네임 
+                                        <div class="an_id">답변자 닉네임 
                                         <button type="button" title="추천">👍</button>
                                         <button type="button" title="신고">😡</button>
-                                     </td>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="answer">댓글이 보이는 부분입니다.
-                                     <td id="an">답변자 닉네임 
+                                        <div class="an_id">답변자 닉네임 
                                         <button type="button" title="추천">👍</button>
                                         <button type="button" title="신고">😡</button>
-                                     </td>
+                                        </div>
                                     </td>
                                 </tr>
-                                <tr>
                                     <td colspan="2">
-                                        <div class="se">
                                         <input id="comment" type="text" placeholder="댓글을 입력해 주세요:)">
-                                        <button type="submit" id="on">등록</button>
-                                        </div>
+                                        <input type="submit" value="등록">
                                     </td>    
                                 </tr>
                             </table>
