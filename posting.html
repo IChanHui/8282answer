@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>8282 응, 답하라 ~게시글~</title>
 </head>
 <style>
@@ -83,13 +84,26 @@
     #answer{
         width: 500px;
         vertical-align: middle;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
         border-bottom: 1px solid rgb(204, 203, 203);
     }
     .an_id{
         display: inline-block;
         font-size: 15px;
         margin-left: 200px;
+    }
+    #like{
+        color: #2196f3;
+        font-size: 25px;
+        border: none;
+        background-color: rgba(255, 255,255,0);
+    }
+
+    #hate{
+        color: #f44336;
+        font-size: 25px;
+        border: none;
+        background-color: rgba(255, 255,255,0);
     }
 
     #comment{ 
@@ -99,16 +113,17 @@
         margin-top: 230px;
         outline: none;
         border: 0px; 
-        font-size: 20px;
+        font-size: 15px;
     }
     input[type="submit"]{
         width: 100px;
         padding: 3px;
-        font-size: 20px;
+        font-size: 15px;
         margin-left: -10px;
         border: none;
         display: inline;
-        color: blue;
+        color: white;
+        background-color: #c779d0;
     }
 
     #home{
@@ -202,7 +217,7 @@
                             <table>
                                 <tr>
                                     <td id="thead" colspan="2"><strong>내용 제목</strong>
-                                    <div class="thead_id">작성자 닉네임 <button type="button" title="신고">😡</button>
+                                    <div class="thead_id">작성자 닉네임 <button type="button" title="신고" id="hate"><i class="far fa-tired"></i></button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -212,16 +227,16 @@
                                 <tr>
                                     <td id="answer">댓글이 보이는 부분입니다.
                                         <div class="an_id">답변자 닉네임 
-                                        <button type="button" title="추천">👍</button>
-                                        <button type="button" title="신고">😡</button>
+                                        <button type="button" title="추천" id="like"><i class="far fa-thumbs-up"></i></button>
+                                        <button type="button" title="신고" id="hate"><i class="far fa-tired"></i></button>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="answer">댓글이 보이는 부분입니다.
                                         <div class="an_id">답변자 닉네임 
-                                        <button type="button" title="추천">👍</button>
-                                        <button type="button" title="신고">😡</button>
+                                        <button type="button" title="추천" id="like"><i class="far fa-thumbs-up"></i></button>
+                                        <button type="button" title="신고" id="hate"><i class="far fa-tired"></i></button>
                                         </div>
                                     </td>
                                 </tr>
