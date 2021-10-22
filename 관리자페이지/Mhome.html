@@ -7,23 +7,36 @@
     <title>관리자 홈페이지</title>
     <style>
         body{ 
+            background-color: blue;
             text-align: center;
+            font-family: 'Courier New', Courier, monospace;
             margin-top: 15%;
          }
 
-        a{ font-size: 50px;  }
-        a:link{ color: black; text-decoration: none; }
-        a:visited{ color: black; }
-        a:hover{ color: blue;}
+        a{ font-size: 60px;  }
+        a:link{ color: rgb(0, 0, 80); text-decoration: none; }
+        a:visited{ color: rgb(0, 0, 80); }
+        a:hover{ color: white;}
 
         button{
-            margin-top: 50px;
-            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 100px;  padding: 12px;
+            font-size: 30px;  color: white; 
+            cursor: pointer;
+            box-shadow: 3px 3px 3px black;
+            transition-duration: 0.3s;
         }
+        button:active{
+            margin-left: 5px;   margin-top: 5px;
+            box-shadow: none;
+        }
+        #s { background-color: rgb(119, 0, 0); padding-left: 20px; padding-right: 20px; }
+        #m { background-color: navy; }
     </style>
 </head>
 <body>
-    <b><a href="#">8282 응,답하라</a></b><br><br>
-    <button>신고 키워드</button>&emsp;<button>회원 제재 관리</button>
+    <b><a href="memberHome.html" title="게스트홈으로 이동">8282 응,답하라</a></b><br><br>
+    <button id="s" onclick="location.href='신고.html'">신고</button>&emsp;&emsp;&emsp;&emsp;
+    <button id="m" onclick="location.href='회원관리.html'">회원관리</button>
 </body>
 </html>

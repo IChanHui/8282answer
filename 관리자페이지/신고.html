@@ -4,29 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>관리자_신고 관리</title>
+    <title>관리자_신고</title>
 </head>
 <style>
-    a{ font-size: 3rem; }
-    a:link{ color: black; text-decoration: none; }
-    a:visited{ color: black; }
-    a:hover{ color: blue;}
+    a{ font-size: 50px;  }
+    a:link{ color: rgb(0, 0, 80); text-decoration: none; }
+    a:visited{ color: rgb(0, 0, 80); }
+    a:hover{ color: white;}
 
-    button{ font-size: 20px; float: right;}
+    button{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large; font-weight: bold;
+        padding: 12px;
+        color: white;  background-color: navy;
+        cursor: pointer;
+        box-shadow: 3px 3px 3px black;
+        transition-duration: 0.3s;
+    }
+    button:active{
+        margin-left: 5px;   margin-top: 5px;
+        box-shadow: none;
+    }
 
     body{
-    width: 1000px;
-    margin: 70px auto;
+        margin: 70px auto;
+        background-color: blue;  color: white;
+        font-family: 'Courier New', Courier, monospace;
     }
 
-    title{
-        margin-bottom: 40px;
-        width: 100%;
-        border-bottom: 2px solid #000;
+    .title{
+        width: 100%; padding-bottom: 20px;
+        border-bottom: 3px solid darkred;
     }
+    .title > a {  margin-left: 20%; margin-right: 30%; }
 
     table{ 
         margin-top: 60px; 
+        margin-bottom: 40px;
         border-spacing: 30px;  
     }
     thead{ 
@@ -38,7 +52,8 @@
 </style>
 <body>
     <div class="title">
-        <a href="#"><strong>8282 응,답하라</strong></a><button>회원 제재 관리</button>
+        <a href="memberHome.html">8282 응,답하라</a>
+        <button onclick="location.href='회원관리.html'">회원관리</button>
     </div>
     <table align="center" >
         <thead>
