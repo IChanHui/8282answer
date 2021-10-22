@@ -1,3 +1,7 @@
+body{
+    background-color: #030D98;
+    color: white;
+}
 .board_wrap {
     width: 1000px;
     margin: 70px auto;
@@ -18,7 +22,7 @@
 
 .board_list {
     width: 100%;
-    border-top: 2px solid #000;
+    border-top: 3px solid #ddd;
 }
 
 .board_list > div {
@@ -31,7 +35,7 @@
 }
 
 .board_list > div:last-child {
-    border-bottom: 1px solid #000;
+    border-bottom: 3px solid #ddd;
 }
 
 .board_list > div > div {
@@ -55,7 +59,7 @@
 
 .board_list .title {
     width: 40%;
-    text-align: left;
+    text-align: center;
 }
 
 .board_list .top .title {
