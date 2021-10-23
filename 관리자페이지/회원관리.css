@@ -1,24 +1,32 @@
 body{
-    background-color: #030D98;
-    color: white;
+    background-color: blue;  color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
+
 .board_wrap {
-    width: 1000px;
+    width: 80%;
     margin: 70px auto;
 }
 
-.board_title {
-    margin-bottom: 40px;
-}
+.board_title {  margin-bottom: 40px; }
+.board_title > a{ font-size: 50px; text-decoration: none; }
+.board-title > a:link, a:visited{ color: rgb(0, 0, 80);  }
+.board_title > a:hover{ color: white;}
 
-.board_title strong {
-    font-size: 3rem;
+button{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large; font-weight: bold;
+    padding: 12px;
+    color: white;  background-color: rgb(119, 0, 0);
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+    transition-duration: 0.3s;
 }
-
-.board_title button{ 
-    font-size: 20px; 
-    float: right;
+button:active{
+    margin-left: 5px;   margin-top: 5px;
+    box-shadow: none;
 }
+.board_title button{  float: right; }
 
 .board_list {
     width: 100%;
@@ -88,10 +96,7 @@ body{
     font-size: 0;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+
 
 .board_page a {
     display: inline-block;
