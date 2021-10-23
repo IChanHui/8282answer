@@ -9,9 +9,9 @@ body{
 }
 
 .board_title {  margin-bottom: 40px; }
-.board_title > a{ font-size: 50px; text-decoration: none; }
-.board-title > a:link, a:visited{ color: rgb(0, 0, 80);  }
-.board_title > a:hover{ color: white;}
+.board_title a{ font-size: 50px; text-decoration: none; }
+.board-title a:link, a:visited{ color: rgb(0, 0, 80);  }
+.board_title a:hover{ color: white;}
 
 button{
     font-family: 'Courier New', Courier, monospace;
@@ -30,21 +30,26 @@ button:active{
 
 .board_list {
     width: 100%;
-    border-top: 3px solid #ddd;
+    border-top: 8px solid white;
 }
 
+.board_list .top{ margin: 20px 0; }
+
 .board_list > div {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid gray;
     font-size: 0;
 }
 
 .board_list > div.top {
-    border-bottom: 1px solid #999;
+    border-bottom: 2px dashed white;
 }
 
 .board_list > div:last-child {
-    border-bottom: 3px solid #ddd;
+    border-bottom: 5px solid navy;
 }
+
+.board_list div .title a{ color:rgba(255, 255, 255, 0.712); }
+
 
 .board_list > div > div {
     display: inline-block;
@@ -70,7 +75,7 @@ button:active{
     text-align: center;
 }
 
-.board_list .top .title {
+.board_list .top{
     text-align: center;
 }
 
@@ -83,11 +88,11 @@ button:active{
 }
 
 .stop button{
-    color: red;
-    background:none;
-    border: 1px solid red;
+    color: red; font-size: small; 
+    background-color: greenyellow;
+    border: 2px solid cornflowerblue;
     padding: 6px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .board_page {
@@ -95,18 +100,15 @@ button:active{
     text-align: center;
     font-size: 0;
 }
-
-
-
 .board_page a {
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    width: 32px;  height: 32px;
     box-sizing: border-box;
     vertical-align: middle;
-    border: 1px solid #ddd;
     border-left: 0;
     line-height: 100%;
+    color: aquamarine; font-weight: bold;
+    text-decoration: none;
 }
 
 .board_page a.bt {
@@ -120,6 +122,3 @@ button:active{
     font-size: 1.4rem;
 }
 
-.board_page a:first-child {
-    border-left: 1px solid #ddd;
-}

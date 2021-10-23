@@ -58,68 +58,71 @@
         top: 25px;   right: 65px; 
         font-size: medium;  font-weight: bold;
     }
+
     #posting{ 
-        width: 600px;
+        width: 630px;
         height: 500px;
         background-color: rgb(217, 244, 255);  color: black;
         border-radius: 30px;  border: 5px ridge skyblue;
         padding: 0 3%; margin-top: 4%; overflow: auto;
-        /*text-overflow:clip;*/
     }
     #posting::-webkit-scrollbar{ display: none;}
-
-    #thead{
-        font-size: 1.5rem;
+    #posting >table{  
+        white-space: normal;
+        border-spacing: 0;
+        padding: 30px 20px 20px 20px;
     }
+    #thead{  font-size: 1.5rem; font-weight: bold; }
     .thead_id{
-        display: inline-block;
-        font-size: 15px;
-        margin-left: 320px;
+        display: inline-block;  float: right;
+        color: rgba(0, 0, 0, 0.774);
+        font-size: 15px;  font-weight: bold;
+        white-space: nowrap; 
     }
+    .thead_id span button { margin-left: -10px; }
 
     #text{
-        padding-top: 15px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid black;
+        padding: 40px 0 25px 0;
+        border-bottom: 3px solid skyblue;
     }
 
     #answer{
-        width: 500px;
         vertical-align: middle;
-        padding-bottom: 15px;
-        border-bottom: 1px solid rgb(204, 203, 203);
+        padding: 30px 15px 10px 15px;
+        border-bottom: 1px solid rgba(135, 207, 235, 0.842);
     }
     .an_id{
         display: inline-block;
-        font-size: 15px;
-        margin-left: 200px;
+        font-size: 12px;
+        white-space: nowrap;
+        padding-top: 25px;
     }
     #like{
         color: #2196f3;
-        font-size: 25px;
+        font-size: 20px;
         border: none;
         background-color: rgba(255, 255,255,0);
+        margin-right: -10px;
     }
-
     #hate{
         color: #f44336;
-        font-size: 25px;
+        font-size: 20px;
         border: none;
         background-color: rgba(255, 255,255,0);
     }
 
     #comment{ 
-        width: 470px;
-        padding: 3px;
+        width: 90%;
+        padding: 10px;
         box-sizing: border-box;
-        margin-top: 230px;
+        margin-top: 10px;
         outline: none;
-        border: 0px; 
+        border: 1px solid #c779d0;
         font-size: 15px;
     }
     input[type="submit"]{
-        width: 100px;
-        padding: 3px;
+        width: 10%;
+        padding: 9px;
         font-size: 15px;
         margin-left: -10px;
         border: none;
@@ -218,30 +221,56 @@
                         <form id="posting">
                             <table>
                                 <tr>
-                                    <td id="thead" colspan="2"><strong>내용 제목</strong>
-                                    <div class="thead_id">작성자 닉네임 <button type="button" title="신고" id="hate"><i class="far fa-tired"></i></button>
+                                    <td id="thead">내용의 제목입니다 제목이 계속 ㅇ되면 어떻게 보일까요 관연!!@@@@@</td>
+                                    <td class="thead_id">
+                                        <span>
+                                            작성자 닉네임
+                                            <button type="button" title="신고" id="hate"><i class="far fa-tired"></i></button>                                            
+                                        </span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="text" colspan="2">작성한 내용이 보이는 부분입니다.<br>
-                                        작성 내용을 보이게 해주세요 여기는 작성한 내용이 보여야합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td id="answer">댓글이 보이는 부분입니다.
-                                        <div class="an_id">답변자 닉네임 
-                                        <button type="button" title="추천" id="like"><i class="far fa-thumbs-up"></i></button>
-                                        <button type="button" title="신고" id="hate"><i class="far fa-tired"></i></button>
-                                        </div>
+                                    <td id="text" colspan="2">
+                                        작성한 내용이 보이는 부분입니다.작성한 내용이 보이는 부분입니다.작성한 내용이 보이는 부분입니다.작성한 내용이 보이는 부분입니다.
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="answer">댓글이 보이는 부분입니다.
-                                        <div class="an_id">답변자 닉네임 
-                                        <button type="button" title="추천" id="like"><i class="far fa-thumbs-up"></i></button>
-                                        <button type="button" title="신고" id="hate"><i class="far fa-tired"></i></button>
-                                        </div>
+                                    <td id="answer">댓글이 보이는 부분입니다.댓글입니다 댓글이 길게 보이면 어떻게 보일까요 과연 두근굳근구든</td>
+                                    <td class="an_id">
+                                        <span>답변자 닉네임 
+                                            <button type="button" title="추천" id="like"><i class="far fa-thumbs-up"></i></button>
+                                            <button type="button" title="신고" id="hate"><i class="far fa-tired"></i></button>
+                                        </span>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td id="answer">댓글이까요 과연 두근굳근구든</td>
+                                    <td class="an_id">
+                                        <span>답변자 닉네임 
+                                            <button type="button" title="추천" id="like"><i class="far fa-thumbs-up"></i></button>
+                                            <button type="button" title="신고" id="hate"><i class="far fa-tired"></i></button>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="answer">댓글입니다 댓글이 길게 보이면 어떻게 보일까요 과연 두근굳근구든</td>
+                                    <td class="an_id">
+                                        <span>답변자 닉네임 
+                                            <button type="button" title="추천" id="like"><i class="far fa-thumbs-up"></i></button>
+                                            <button type="button" title="신고" id="hate"><i class="far fa-tired"></i></button>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="answer">댓글이 보이는 부분입니다.과연 두근굳근구든</td>
+                                    <td class="an_id">
+                                        <span>답변자 닉네임 
+                                            <button type="button" title="추천" id="like"><i class="far fa-thumbs-up"></i></button>
+                                            <button type="button" title="신고" id="hate"><i class="far fa-tired"></i></button>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>                    
                                     <td colspan="2">
                                         <input id="comment" type="text" placeholder="댓글을 입력해 주세요:)">
                                         <input type="submit" value="등록">
